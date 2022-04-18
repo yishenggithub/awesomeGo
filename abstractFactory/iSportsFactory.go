@@ -7,7 +7,7 @@ type iSportsFactory interface {
 	makeShirt() iShirt
 }
 
-func getSportsFactiry(brand string) (iSportsFactory, error) {
+func getSportsFactory(brand string) (iSportsFactory, error) {
 	if brand == "adidas" {
 		return &adidas{}, nil
 	}
